@@ -1,0 +1,187 @@
+[
+  {
+    "key": "network_wide",
+    "alerts": [
+      {
+        "field": "settingsChanged"
+      },
+      {
+        "field": "vpnConnectivityChange"
+      },
+      {
+        "field": "rogueAp"
+      },
+      {
+        "field": "usageAlert",
+        "parameters": [
+          {
+            "key": "period",
+            "type": "period"
+          },
+          {
+            "key": "threshold",
+            "type": "data_size"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "wireless",
+    "alerts": [
+      {
+        "field": "gatewayDown",
+        "parameters": [
+          {
+            "key": "timeout",
+            "type": "timeout"
+          }
+        ]
+      },
+      {
+        "field": "repeaterDown",
+        "parameters": [
+          {
+            "key": "timeout",
+            "type": "timeout"
+          }
+        ]
+      },
+      {
+        "field": "gatewayToRepeater"
+      }
+    ]
+  },
+  {
+    "key": "security_appliance",
+    "alerts": [
+      {
+        "field": "applianceDown",
+        "parameters": [
+          {
+            "key": "timeout",
+            "type": "timeout"
+          }
+        ]
+      },
+      {
+        "field": "failoverEvent"
+      },
+      {
+        "field": "dhcpNoLeases"
+      },
+      {
+        "field": "ipConflict"
+      },
+      {
+        "field": "cellularUpDown"
+      },
+      {
+        "field": "rogueDhcp"
+      },
+      {
+        "field": "vrrp"
+      },
+      {
+        "field": "ampMalwareBlocked"
+      },
+      {
+        "field": "ampMalwareDetected"
+      },
+      {
+        "field": "clientConnectivity"
+      }
+    ]
+  },
+  {
+    "key": "switch",
+    "alerts": [
+      {
+        "field": "switchDown",
+        "parameters": [
+          {
+            "key": "timeout",
+            "type": "timeout"
+          }
+        ]
+      },
+      {
+        "field": "newDhcpServer"
+      },
+      {
+        "field": "portDown",
+        "parameters": [
+          {
+            "key": "selector",
+            "type": "port_selection"
+          },
+          {
+            "key": "timeout",
+            "type": "timeout"
+          }
+        ]
+      },
+      {
+        "field": "portError",
+        "parameters": [
+          {
+            "key": "selector",
+            "type": "port_selection"
+          }
+        ]
+      },
+      {
+        "field": "portSpeed",
+        "parameters": [
+          {
+            "key": "selector",
+            "type": "port_selection"
+          }
+        ]
+      },
+      {
+        "field": "powerSupplyDown"
+      },
+      {
+        "field": "rpsBackup"
+      },
+      {
+        "field": "udldError"
+      }
+    ]
+  },
+  {
+    "key": "cellular_gateway",
+    "alerts": [
+      {
+        "field": "cellularGatewayDown",
+        "parameters": [
+          {
+            "key": "timeout",
+            "type": "timeout"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "camera",
+    "alerts": [
+      {
+        "field": "cameraDown",
+        "parameters": [
+          {
+            "key": "timeout",
+            "type": "timeout"
+          }
+        ]
+      },
+      {
+        "field": "customMotionAlertRecipients"
+      },
+      {
+        "field": "nodeHardwareFailure"
+      }
+    ]
+  }
+]

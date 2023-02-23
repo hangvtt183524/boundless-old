@@ -1,0 +1,65 @@
+@import "../../../../../styles/v2/colors";
+
+.similar-tags {
+  display: inline-block;
+  overflow: hidden;
+
+  &__warning {
+    width: 22px;
+    height: 22px;
+    color: $text-warning;
+    border: solid $text-warning 1px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 4px;
+    float: left;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 13px;
+    margin-top: 5px;
+  }
+
+  &__list {
+    float: left;
+    display: flex;
+    line-height: 32px;
+
+    &__item {
+      text-decoration: underline;
+    }
+    &__comma {
+      margin-left: -2px;
+    }
+  }
+  .edit-check-icon {
+    right: 29px !important;
+    width: 22px;
+    height: 22px;
+    border: 1px solid $green-medium;
+    color: $green-medium;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .edit-close-icon {
+    width: 22px;
+    height: 22px;
+    border: 1px solid $gray-dark;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .dismiss-button {
+    border-radius: 4px;
+    margin-top: 1px;
+    margin-left: -4px;
+    min-width: 89px;
+    max-width: 89px;
+    height: 32px;
+    line-height: 32px;
+    border-color: $blue-dark;
+    background: $blue-dark;
+
+    &:active, &:focus {
+      color: $white;
+    }
+  }
+}

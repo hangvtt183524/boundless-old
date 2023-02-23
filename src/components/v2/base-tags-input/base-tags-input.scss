@@ -1,0 +1,71 @@
+@import "../../../styles/v2/colors";
+
+.base-tags-input .vue-tags-input-wrapper {
+  .ti-input {
+    background: $white;
+    border: 1px solid $gray-light;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0;
+    width: 100%;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 41px;
+    height: 41px;
+    color: $text-medium;
+
+    &::placeholder {
+      color: rgba($text-medium, 0.5);
+    }
+
+    &:focus {
+      border-color: $blue-medium;
+    }
+
+    &:disabled {
+      border-color: $gray-light;
+      background-color: rgba(#C8CCD5, 0.15);
+      cursor: not-allowed;
+    }
+  }
+
+  .ti-tag {
+    background: $gray-reserve;
+    color: $text-dark;
+  }
+
+  label {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 41px;
+    color: $text-medium;
+    margin-right: 30px;
+  }
+
+  &--small {
+    input {
+      line-height: 30px;
+    }
+
+    label {
+      line-height: 30px;
+    }
+  }
+
+  &--multiline {
+    label {
+      display: block;
+    }
+  }
+
+  &--invalid {
+    input {
+      border-color: $danger;
+    }
+  }
+}

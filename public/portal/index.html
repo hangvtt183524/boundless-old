@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+
+    <title>Boundless Wifi</title>
+    <script type="text/javascript">
+      // campaign json and splash page json loader
+      function getAllParams(url) {
+           var params = {};
+           var parser = document.createElement('a');
+           parser.href = url;
+           var query = parser.search.substring(1);
+           var vars = query.split('&');
+           for (var i = 0; i < vars.length; i++) {
+             var pair = vars[i].split('=');
+             params[pair[0]] = decodeURIComponent(pair[1]);
+           }
+           return params;
+      }
+
+      function redirectIfWifi4eu() {
+        var pageConfig = window.mainConfig.splash_page.config
+        if (pageConfig.pages.defaultPage === 'wifi4eu') {
+          // replace index.html to wifi4eu.html
+          var nhref = window.location.href.replace('index.html', 'wifi4eu.html');
+          // add wifi4euNetworkId query param when redirect
+          var nhrefsplit = nhref.split('?');
+          var originParams = nhrefsplit[1] ? ('&' + nhrefsplit[1]) : '';
+          if (originParams.indexOf('wifi4euNetworkId') === -1) {
+            var wifi4euNetworkIdParam = 'wifi4euNetworkId=' + (pageConfig.settings.wifi4euNetworkId ? pageConfig.settings.wifi4euNetworkId : '');
+            nhref = nhrefsplit[0] + '?' + wifi4euNetworkIdParam + originParams
+          }
+          window.location.href = nhref
+        }
+      }
+
+      const href = window.location.href
+      const pageParams = getAllParams(href)
+
+      const processEnv = JSON.parse('${JSON.stringify(process.env)}')
+      const API_URL = pageParams.registration_server ? (pageParams.registration_server + '/api') : processEnv.VUE_APP_SERVER_URL
+
+      window.mainConfig = {}
+
+      if (pageParams.template_id) {
+        let xhr = new XMLHttpRequest()
+        xhr.open('GET', API_URL + '/splash-page-config/?key=' + pageParams.template_id)
+        xhr.responseType = 'json'
+        xhr.send()
+        xhr.onload = function () {
+          let res = xhr.response
+          // console.log('loaded splash page config', res)
+          if (typeof res === 'string') { // for IE
+            res = JSON.parse(res)
+          }
+
+          window.mainConfig.splash_page = res.data
+          redirectIfWifi4eu()
+        }
+      };
+
+      if (pageParams.campaign_key && pageParams.campaign_last_update) {
+        let camxhr = new XMLHttpRequest()
+        camxhr.open('GET', API_URL + '/campaign-config/?key=' + pageParams.campaign_key + '&campaign_last_update=' + pageParams.campaign_last_update)
+        camxhr.responseType = 'json'
+        camxhr.send()
+        camxhr.onload = function () {
+          let res = camxhr.response
+          // console.log('loaded campaign data', res)
+          if (typeof res === 'string') { // for IE
+            res = JSON.parse(res)
+          }
+
+          window.mainConfig.campaign = res.data.config
+        }
+      }
+
+      if (pageParams.version) {
+        window.baseUrl = href.substring(0, href.indexOf('index.html'))
+        let devXhr = new XMLHttpRequest()
+        devXhr.open('GET', window.baseUrl + 'config.' + pageParams.version + '.json')
+        devXhr.responseType = 'json'
+        devXhr.send()
+        devXhr.onload = function () {
+          let res = devXhr.response
+          if (typeof res === 'string') { // for IE
+            res = JSON.parse(res)
+          }
+
+          if (res) {
+            // Old style campaign
+            window.mainConfig = res
+            redirectIfWifi4eu()
+          }
+        }
+      }
+    </script>
+
+  </head>
+  <body data-git-branch='<%= process.env.VUE_APP_BRANCH %>' data-git-commit="<%= process.env.VUE_APP_COMMITHASH %>" data-git-revision="<%= process.env.VUE_APP_VERSION %>">
+    <noscript>
+      <strong>Boundless Wifi</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

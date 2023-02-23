@@ -1,0 +1,17 @@
+@import "../../../../styles/v2/colors";
+
+.name-compliance-rule-set-target-selection {
+  &__entity-type {
+    min-height: 60px;
+    border-bottom: 1px solid $gray-xlight;
+
+    .base-check-box {
+      margin-top: 20px;
+    }
+
+    .base-multi-select {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}

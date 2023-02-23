@@ -1,0 +1,100 @@
+@import "../../../../styles/v2/colors";
+
+.template-customizations {
+  background-color: $white;
+
+  &__header {
+    height: 60px;
+    padding-right: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &__back-link-container {
+      float: left;
+      width: 60px;
+      line-height: 60px;
+      border-right: 1px solid $gray-xlight;
+      text-align: center;
+
+      &__back-icon {
+        color: $blue-reserve;
+        line-height: 60px;
+      }
+    }
+
+    &__page-title {
+      margin-left: 33px;
+      line-height: 60px;
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      float: left;
+    }
+
+    &__filters {
+      float: left;
+      padding: 0 20px;
+      border-left: 1px solid $gray-xlight;
+      margin-left: 20px;
+      line-height: 60px;
+
+      &__filter {
+        display: inline-block;
+
+        &__label {
+          font-family: Fira Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 60px;
+          color: #1146ae;
+          display: inline-block;
+          margin-right: 20px;
+        }
+
+        &__input {
+          display: inline-block;
+          min-width: 200px;
+        }
+      }
+    }
+
+    &__actions {
+      float: right;
+
+      .base-button {
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  &__content {
+    padding: 24px 30px;
+    box-sizing: border-box;
+
+    &__scroll-area {
+      height: 100%;
+    }
+  }
+
+  &__add-item-trigger {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 35px;
+    text-decoration-line: underline;
+    color: $green-medium;
+    cursor: pointer;
+  }
+
+  @media only screen and (min-width: 1264px) {
+    &__content {
+      height: calc(100vh - 180px);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../../../styles/v2/colors";
+
+.network-creation-flow-step-field {
+  &__mode-switch-trigger {
+    cursor: pointer;
+    font-family: Fira Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: $blue-reserve;
+    margin-top: 5px;
+  }
+}

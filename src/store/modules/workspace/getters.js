@@ -1,0 +1,13 @@
+export const workspaces = (state) => state.workspaces
+export const workspacesCount = (state) => state.workspacesCount
+export const pendingWorkspaceInvitationId = (state) => state.pendingWorkspaceInvitationId
+export const externalApiKeys = (state) => state.externalApiKeys
+export const externalApiKeysCount = (state) => state.externalApiKeysCount
+export const externalApiKeyOrganizations = (state) => state.externalApiKeyOrganizations
+export const externalApiKeyOrganizationsCount = (state) => state.externalApiKeyOrganizationsCount
+export const manageableOrganizations = (state) => state.manageableOrganizations
+export const manageableOrganizationsCount = (state) => state.manageableOrganizationsCount
+export const activityLogs = (state) => state.activityLogs
+export const activityLogsCount = (state) => state.activityLogsCount
+export const userSecurityChecks = (state) => state.userSecurityChecks
+export const hasApiKeys = (state) => state.hasApiKeys

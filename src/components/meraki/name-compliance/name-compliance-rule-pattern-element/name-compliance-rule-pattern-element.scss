@@ -1,0 +1,86 @@
+@import "../../../../styles/v2/colors";
+
+.name-compliance-rule-pattern-element {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $gray-xlight;
+
+  &__pattern-name-container {
+    overflow: visible;
+
+    .base-text-input ::v-deep {
+      overflow: visible;
+
+      .base-text-input__error-container {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__actions {
+    margin-top: 35px;
+    margin-left: 15px;
+
+    &__action {
+      font-size: 16px;
+      vertical-align: middle;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &__character-sets {
+    &__character-set {
+      &.fixed-list {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__parameters {
+    &__parameter {
+      margin-bottom: 5px;
+      padding-right: 10px;
+
+      .base-text-input ::v-deep {
+        label {
+          line-height: 20px;
+          margin-bottom: 5px;
+          white-space: nowrap;
+        }
+      }
+
+      &__sample-names {
+        white-space: nowrap;
+
+        &__label {
+          font-weight: bold;
+          margin-right: 10px;
+        }
+
+        &__sample-name {
+          margin-right: 5px;
+
+          &:not(:last-child):after {
+            content: ','
+          }
+        }
+      }
+
+      &__name-input-mode-toggle {
+        cursor: pointer;
+        font-family: Fira Sans;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: $blue-reserve;
+        margin-top: 5px;
+      }
+    }
+
+    &.length-mode-row {
+      margin-bottom: 10px;
+    }
+  }
+}

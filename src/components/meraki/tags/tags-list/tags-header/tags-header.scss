@@ -1,0 +1,58 @@
+@import "../../../../../styles/v2/colors";
+
+.tags-list--header {
+  line-height: 72px;
+  padding: 0 27px;
+  position: relative;
+  border-bottom: 3px solid $gray-reserve;
+  z-index: 2;
+
+  &--search-options {
+    .base-check-box {
+      top: 2px;
+      position: relative;
+    }
+  }
+
+  &--actions {
+    text-align: right;
+    float: right;
+
+    .replace-tags-link {
+      width: 110px;
+      float: left;
+      height: 75px;
+      margin-left: 13px;
+    }
+
+    &__action-button {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      background-color: $blue-dark;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      text-transform: uppercase;
+      margin-left: 5px;
+
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      color: $white;
+
+      .v-icon {
+        color: $white;
+        font-size: 15px;
+      }
+
+      &--disabled {
+        cursor: not-allowed;
+        background: $gray-light;
+      }
+
+    }
+  }
+}

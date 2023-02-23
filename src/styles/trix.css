@@ -1,0 +1,9 @@
+.trix-button--icon-textAlignCenter::before {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/text-editing-2/100/Artboard_3-512.png);
+}
+.trix-button--icon-textAlignLeft::before {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/text-editing-2/100/Artboard_2-512.png);
+}
+.trix-button--icon-textAlignRight::before {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/text-editing-2/100/Artboard_4-512.png);
+}

@@ -1,0 +1,181 @@
+@import "../../../../styles/v2/colors";
+@import "../../../../styles/v2/base.scss";
+
+.configuration-compliance-rule-set-detail {
+  position: relative;
+
+  &__definition {
+    background-color: $white;
+  }
+
+  &__header {
+    height: 60px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 0 30px 0 0;
+    overflow: hidden;
+
+    &__back-link-container {
+      float: left;
+      width: 60px;
+      line-height: 60px;
+      border-right: 1px solid $gray-xlight;
+      text-align: center;
+
+      &__back-icon {
+        color: $blue-reserve;
+        line-height: 60px;
+      }
+    }
+
+    &__page-title {
+      margin-left: 33px;
+      line-height: 60px;
+      letter-spacing: 1px;
+      float: left;
+    }
+
+    &__actions {
+      float: right;
+
+      .base-button {
+        min-width: 180px;
+        margin-left: 10px;
+        margin-top: 12px;
+      }
+    }
+  }
+
+  &__body {
+    padding: 27px 27px 0 27px;
+  }
+
+  &__field-row {
+    padding: 44px 40px;
+
+    &:not(:last-child) {
+      border-bottom: 3px solid $gray-xlight;
+    }
+
+    label {
+      line-height: 40px;
+    }
+  }
+
+  .configuration-section {
+    margin-top: 20px;
+
+    &__section {
+      background-color: $white;
+
+      &__header {
+        height: 60px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        padding: 0 30px;
+        overflow: hidden;
+      }
+
+      &__content {
+        height: calc(100% - 60px);
+
+        &__scroll-area {
+          height: calc(100%);
+        }
+      }
+    }
+
+    &__category-selection {
+      &__header {
+        &__title {
+          font-family: Fira Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 60px;
+          letter-spacing: 1px;
+          color: $text-medium;
+        }
+      }
+    }
+
+    &__template-management {
+      &__header {
+        overflow: hidden;
+        padding-left: 0;
+
+        &__back-link-container {
+          float: left;
+          width: 60px;
+          border-right: 1px solid $gray-xlight;
+          text-align: center;
+
+          &__back-icon {
+            color: $blue-reserve;
+            line-height: 60px;
+          }
+        }
+
+        &__title {
+          float: left;
+          font-family: Fira Sans;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 60px;
+          padding-left: 30px;
+        }
+
+        &__ssid-selection {
+          float: left;
+          margin-left: 20px;
+          margin-top: 10px;
+          min-width: 240px;
+        }
+      }
+    }
+  }
+
+  &__loading-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+
+@media only screen and (min-width: 1264px) {
+  .configuration-compliance-rule-set-detail {
+    .configuration-section {
+      &__section {
+        height: calc(100vh - 170px);
+
+        &.configuration-section__category-selection {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1264px) {
+  .configuration-compliance-rule-set-detail {
+    .configuration-section {
+      &__section {
+        height: auto;
+        min-height: 420px;
+
+        &.configuration-section__category-selection {
+          height: 420px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

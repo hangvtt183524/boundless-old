@@ -1,0 +1,2 @@
+export const SET_ORG_USERS = 'SET_ORG_USERS'
+export const SET_ORG_USERS_COUNT = 'SET_ORG_USERS_COUNT'

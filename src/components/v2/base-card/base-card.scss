@@ -1,0 +1,72 @@
+@import "../../../styles/v2/colors";
+
+.base-card {
+
+  .base-card-content {
+    background: $white;
+
+    border: 2px solid $blue-dark;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    cursor: pointer;
+
+    .card-icon-container {
+      float: left;
+      margin-right: 50px;
+    }
+
+    .base-card-title {
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+      color: $text-dark;
+    }
+
+    .base-card-text {
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: $text-medium;
+    }
+  }
+
+  &--small {
+    .base-card-content {
+      padding: 26px  38px;
+    }
+  }
+
+  &--horizontal {
+    .base-card-content {
+      padding: 20px 27px;
+    }
+  }
+
+  &--selected {
+    .base-card-content {
+      background: $blue-dark;
+
+      .base-card-title, .base-card-text {
+        color: white;
+      }
+    }
+  }
+
+  .active-content {
+    background-color: $white;
+    padding: 20px 34px;
+    border: 1px solid $blue-dark;
+    border-radius: 0 0 6px 6px;
+  }
+}
+
+.base-card--has-active-content.base-card--selected {
+  .base-card-content {
+    border-radius: 6px 6px 0 0;
+  }
+}

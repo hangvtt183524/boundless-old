@@ -1,0 +1,4 @@
+name,type,timezone,ssid name,tags,serials,device tags,vlan name,vlan subnet,vlan ip,vlan id,template name,order number
+network 1,wireless,,SSID 1,,AAAA-AAAA-AAAA,tag-1;tag-2,,,,,Template Name,4CXXXXXXX
+network 2,wireless;switch,America/Los_Angeles,SSID 1,tag-1;tag-2,,,,,,,Template Name,
+network 3,,America/Los_Angeles,SSID 2,tag,,,Vlan Name,192.168.130.0/24,192.168.130.3,2,,

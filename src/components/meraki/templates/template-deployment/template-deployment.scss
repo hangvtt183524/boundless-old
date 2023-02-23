@@ -1,0 +1,39 @@
+@import "../../../../styles/v2/colors";
+
+.template-deployment-page {
+  background-color: $white;
+  position: relative;
+  padding: 24px 30px;
+
+  &__target-selection-container {
+    &__switch-profile-state {
+      position: relative;
+      top: 5px;
+    }
+
+    &__warnings {
+      background-color: $warning;
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      border: 1px solid $gray-light;
+      padding: 8px 10px;
+      color: $text-dark;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1264px) {
+  .template-deployment-page {
+    height: calc(100vh - 120px);
+
+    &__target-selection-container {
+      max-width: 1024px;
+      margin: 80px auto;
+      height: calc(100% - 160px);
+    }
+  }
+}

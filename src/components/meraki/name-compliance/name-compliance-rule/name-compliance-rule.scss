@@ -1,0 +1,94 @@
+@import "../../../../styles/v2/colors";
+
+.name-compliance-rule {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $gray-xlight;
+  position: relative;
+
+  &__row {
+
+    &.value-row {
+      margin-top: 20px;
+    }
+
+    label {
+      line-height: 40px;
+      display: block;
+    }
+
+    &__input-column {
+      padding-right: 20px;
+    }
+  }
+
+  &__actions {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    &__action {
+      font-size: 16px;
+      vertical-align: middle;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &__sample-names {
+    &__label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    &__sample-name {
+      margin-right: 5px;
+
+      &:not(:last-child):after {
+        content: ','
+      }
+    }
+  }
+
+  &__sample-regex-value {
+    margin-top: 5px;
+    white-space: nowrap;
+
+    &__label {
+      font-weight: bold;
+      margin-right: 10px;
+      white-space: nowrap;
+    }
+  }
+
+  &__name-input-mode-toggle {
+    cursor: pointer;
+    font-family: Fira Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: $blue-reserve;
+    margin-top: 5px;
+  }
+
+  &__pattern-elements {
+
+    &__add-chart-item-trigger {
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 35px;
+      text-decoration-line: underline;
+      color: $green-medium;
+      cursor: pointer;
+    }
+  }
+
+  .operator-select ::v-deep {
+    .ps__rail-y {
+      opacity: 1;
+    }
+  }
+}

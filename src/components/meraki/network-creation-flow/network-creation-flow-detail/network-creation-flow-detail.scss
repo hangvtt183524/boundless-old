@@ -1,0 +1,135 @@
+@import "../../../../styles/v2/colors";
+@import "../../../../styles/v2/base";
+
+.network-creation-flow-detail-page {
+  background-color: $white;
+  position: relative;
+
+  &__header {
+    height: 60px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 0 30px 0 0;
+    overflow: hidden;
+
+    &__back-link-container {
+      float: left;
+      width: 60px;
+      line-height: 60px;
+      border-right: 1px solid $gray-xlight;
+      text-align: center;
+
+      &__back-icon {
+        color: $blue-reserve;
+        line-height: 60px;
+        cursor: pointer;
+      }
+    }
+
+    &__page-title {
+      margin-left: 33px;
+      line-height: 60px;
+      letter-spacing: 1px;
+      float: left;
+    }
+
+    &__tab-headers {
+      float: left;
+    }
+
+    &__actions {
+      float: right;
+
+      &__action {
+        margin: 10px 0 0 13px;
+        width: 180px;
+      }
+    }
+  }
+
+  &__content {
+    box-sizing: border-box;
+    padding-bottom: 44px;
+
+    &__tab {
+      &--executions-tab {
+        padding: 44px 40px;
+
+        .execution-summary {
+          margin-top: 24px;
+        }
+      }
+    }
+
+    .upload-section {
+      padding: 44px 40px;
+      border-bottom: 3px solid $gray-xlight;
+
+      &__sample-file-download-trigger {
+        margin-top: 5px;
+        font-family: Fira Sans;
+      }
+    }
+
+    .configuration-section {
+      position: relative;
+
+      .download-link {
+        position: absolute;
+        right: 40px;
+        top: 24px;
+        cursor: pointer;
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: right;
+        color: $green-medium;
+        text-decoration-line: underline;
+      }
+    }
+
+    .flow-description {
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .step-description {
+      padding: 44px 40px;
+      border-bottom: 3px solid $gray-xlight;
+
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    .add-step-button {
+      margin-top: 20px;
+      margin-left: 40px;
+    }
+
+    .step-list {
+      .network-creation-flow-step {
+        transform: none !important;  // Overwrite whats being set by sortable plugin
+      }
+    }
+  }
+
+  &__loading-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+

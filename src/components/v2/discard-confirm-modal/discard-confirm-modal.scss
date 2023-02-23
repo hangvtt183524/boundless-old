@@ -1,0 +1,46 @@
+@import "../../../styles/v2/colors";
+
+.discard-confirm-modal {
+
+  &--header {
+
+  }
+
+  &--title {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $blue-dark;
+  }
+
+  &--content {
+    width: 360px;
+    margin: 60px auto;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: black;
+  }
+
+  &--footer {
+    margin-top: 50px;
+    text-align: center;
+
+    .base-button {
+      width: 160px;
+
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,294 @@
+@import "../../../styles/v2/colors";
+
+.base-select {
+
+  .select-container {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    color: rgba($text-medium, 0.5);
+    width: 100%;
+    min-width: 80px;
+    display: inline-block;
+    position: relative;
+
+    background-color: $white;
+    border: 1px solid $gray-light;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: 0;
+
+    .selected-item {
+      line-height: 40px;
+      cursor: pointer;
+      padding: 0 10px;
+      user-select: none;
+
+      .select-icon {
+        position: absolute;
+        right: 10px;
+
+        line-height: 40px;
+        color: rgba($text-medium, 0.5);
+        font-size: 20px;
+      }
+
+      .clear-icon {
+        position: absolute;
+        right: 30px;
+
+        line-height: 40px;
+        color: rgba($text-medium, 0.5);
+        font-size: 20px;
+      }
+
+      &__name-container {
+        display: inline-flex;
+        width: calc(100% - 20px);
+      }
+
+      &__name {
+        width: 100%;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 30px;
+        height: 30px;
+        margin-right: 0;
+      }
+    }
+
+    .options {
+      padding-left: 0;
+      position: fixed;
+      border: 1px solid $blue-medium;
+      border-top-width: 0;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      background-color: white;
+      z-index: 999;
+      overflow: hidden;
+
+      .search-container {
+        .base-text-input--has-pre-icon ::v-deep {
+          input {
+            padding: 12px 28px 12px 36px;
+            border: none;
+            border-radius: 0;
+            background: $gray-xlight;
+            color: $text-dark;
+
+            &::placeholder {
+              color: $text-dark !important;
+            }
+
+            &:focus {
+              padding: 12px 28px 12px 36px;
+            }
+          }
+
+          &__pre-icon.v-icon {
+            left: 10px;
+          }
+
+          .v-icon {
+            color: $text-dark !important;
+          }
+        }
+
+        &__search-input {
+          &__clear-icon {
+            margin-right: 7px;
+          }
+        }
+      }
+
+      .scroll-holder {
+        max-height: 240px;
+      }
+
+      ::v-deep {
+        .base-select-option {
+          &__option {
+            padding-left: 10px;
+            line-height: 40px;
+            list-style: none;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $gray-medium;
+            }
+
+            &--highlighted {
+              color: $blue-reserve;
+            }
+          }
+
+          &__section {
+            margin-top: 10px;
+
+            &__title {
+              padding-left: 10px;
+              line-height: 30px;
+              font-size: 13px;
+              border-bottom: 1px solid $gray-dark;
+              font-weight: bold;
+              user-select: none;
+            }
+
+            &__options {
+              .base-select-option__option {
+                padding-left: 20px;
+              }
+            }
+          }
+
+          &--disabled {
+            .base-select-option__option {
+              cursor: not-allowed;
+              background-color: rgba($gray-light, 0.15);
+              color: rgba($text-medium, 0.50);
+            }
+          }
+
+          &:not(.base-select-option--tree) {
+            &:nth-child(2n + 1) {
+              background-color: rgba($gray-xlight, 0.5);
+            }
+            &:nth-child(2n) {
+              background-color: $white;
+            }
+          }
+
+          &--tree {
+            &:not(.base-select-option--disabled) {
+              .base-select-option__section {
+                .base-select-option {
+                  &:nth-child(2n + 1) {
+                    background-color:  rgba($gray-xlight, 0.5);
+                  }
+                  &:nth-child(2n) {
+                    background-color: $white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &--active {
+      border-color: $blue-medium;
+      color: $text-dark;
+      border-bottom-width: 0;
+      padding-bottom: 1px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &--selected {
+      color: $text-dark;
+    }
+
+    &--upwards {
+      .options {
+        top: auto;
+        bottom: 40px;
+        border-top-width: 1px;
+        border-bottom-width: 0;
+        border-radius: 4px  4px 0 0;
+      }
+    }
+
+    &--invalid {
+      border-color: $danger;
+    }
+
+    &--disabled {
+      border-color: $gray-light;
+      background-color: rgba(#C8CCD5, 0.15);
+
+      .selected-item {
+        cursor: not-allowed;
+      }
+    }
+
+    &--clear-icon-visible {
+      .selected-item {
+        &__name-container {
+          width: calc(100% - 45px);
+        }
+      }
+    }
+  }
+
+  label {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 41px;
+    color: $text-medium;
+    margin-right: 30px;
+  }
+
+  .select-container--upwards.select-container--active {
+    border-bottom-width: 1px;
+    border-top-width: 0;
+    padding-top: 1px;
+    padding-bottom: 0;
+    border-radius: 0 0 4px 4px;
+  }
+
+  &__error-container {
+    &__error {
+      font-family: Fira Sans;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 28px;
+      color: $text-medium;
+    }
+  }
+
+  &--small {
+    .select-container {
+      .selected-item {
+        line-height: 30px;
+
+        .select-icon, .clear-icon {
+          line-height: 30px;
+          font-size: 16px;
+        }
+      }
+
+      .options {
+        .base-select-option ::v-deep {
+          .base-select-option__option {
+            line-height: 30px;
+          }
+
+          .base-select-option__section {
+            &__title {
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    label {
+      line-height: 30px;
+    }
+  }
+
+  &--multiline {
+    label {
+      display: block;
+    }
+  }
+}

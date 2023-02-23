@@ -1,0 +1,278 @@
+@import "../../../../styles/v2/colors";
+
+.wifi-setup-page {
+  width: 100%;
+  position: relative;
+
+  &__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4F4F4F;
+    display: none;
+    margin-bottom: 30px;
+  }
+
+  &__deployment-section {
+    background-color: $white;
+    margin-top: 25px;
+
+    &__header {
+      height: 65px;
+      padding: 0 17px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+
+      &__title {
+        float: left;
+
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 65px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $text-medium;
+      }
+
+      &__actions {
+        float: right;
+
+        .base-button {
+          margin-top: 12px;
+          padding: 0 20px;
+        }
+      }
+    }
+
+    &__content {
+      box-sizing: border-box;
+      padding: 30px 34px;
+
+      &__ssid-selection {
+        &__header {
+          overflow: hidden;
+          font-family: Fira Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          color: $text-medium;
+
+          &__title {
+            float: left;
+          }
+
+          &__count {
+            float: right;
+          }
+        }
+
+        &__items {
+          margin-top: 10px;
+
+          &__item ::v-deep {
+            label {
+              font-size: 15px;
+              color: $text-medium;
+            }
+          }
+
+          &__item {
+            line-height: 32px;
+            padding: 0 12px;
+            background-color: rgba($gray-xlight, .5);
+
+            &__ssid_name {
+              display: inline-block;
+              margin-left: 10px;
+              text-align: right;
+
+              font-family: Fira Sans;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 20px;
+              color: $text-medium;
+              vertical-align: middle;
+              position: relative;
+              top: -1px;
+            }
+
+            .base-check-box {
+              height: 20px;
+              line-height: 20px;
+              vertical-align: middle;
+              position: relative;
+              top: -1px;
+            }
+
+            .v-icon {
+              float: right;
+              line-height: 32px;
+              font-size: 20px;
+            }
+          }
+
+          &__item:nth-child(2n) {
+            background-color: $white;
+          }
+        }
+
+        &__add-ssid {
+          line-height: 43px;
+          padding-left: 45px;
+          margin-top: 10px;
+
+          &__button {
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            text-decoration-line: underline;
+            color: $green-medium;
+            cursor: pointer;
+          }
+
+          .base-text-input ::v-deep {
+            margin-right: 10px;
+            width: 186px;
+            display: inline-block;
+
+            input {
+              padding: 8px 9px;
+              font-size: 14px;
+              line-height: 14px;
+            }
+          }
+
+          .base-button {
+            margin-right: 10px;
+            width: 110px;
+            padding: 6px 9px;
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: normal;
+
+            &:not(:disabled) {
+              color: $blue-reserve;
+            }
+            &:disabled {
+              text-decoration: none;
+            }
+          }
+
+          .v-icon {
+            font-size: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .social-login-selection {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__placeholder-section {
+    position: relative; 
+    top: 50%; 
+    transform: translate(0,-50%);
+  
+    &__warning-icon {
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    &__title {
+      margin-top: 26px;
+
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $text-medium;
+    }
+    &__progress {
+      background: $gray-medium;
+      height: 4px;
+      width: 402px;
+      margin: 23px auto;
+    }
+    &__description {
+      margin-top: 48px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+
+      color: #4F4F4F;
+    }
+  }
+
+  &__loading-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media only screen and (min-width: 1264px) {
+  .wifi-setup-page {
+    &__left-section {
+      height: calc(100vh - 115px);
+      margin-right: 25px;
+
+      .network-template-list {
+        height: 100%;
+      }
+    }
+
+    &__deployment-section {
+
+      height: calc(100vh - 115px);
+      margin-top: 0;
+
+      &__regular-content {
+        height: 100%;
+      }
+
+      &__content {
+        height: calc(100% - 65px);
+
+        &__scroll-holder {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .wifi-setup-page.is-quick-setup {
+    .wifi-setup-page__left-section {
+      height: calc(100vh - 210px);
+    }
+
+    .wifi-setup-page__deployment-section {
+      height: calc(100vh - 210px);
+    }
+
+    .wifi-setup-page__description {
+      display: block;
+    }
+  }
+}

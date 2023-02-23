@@ -1,0 +1,12 @@
+export const merakiOrganizations = (state) => state.merakiOrganizations
+export const merakiAdmins = (state) => state.merakiAdmins
+export const merakiNetworks = (state) => state.merakiNetworks
+export const associatedSites = (state) => state.associatedSites
+export const associatedSitesCount = (state) => state.associatedSitesCount
+export const merakiConfigTemplates = (state) => state.merakiConfigTemplates
+export const merakiNetworkBases = (state) => state.merakiNetworkBases
+export const merakiDevices = (state) => state.merakiDevices
+export const merakiMatchedDevices = (state) => state.merakiMatchedDevices
+export const merakiSkippedDevices = (state) => state.merakiSkippedDevices
+export const associatedDevices = (state) => state.associatedDevices
+export const associatedDevicesCount = (state) => state.associatedDevicesCount

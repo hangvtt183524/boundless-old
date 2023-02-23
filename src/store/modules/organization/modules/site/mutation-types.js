@@ -1,0 +1,1 @@
+export const SET_SITE_OPTIONS = 'SET_SITE_OPTIONS'

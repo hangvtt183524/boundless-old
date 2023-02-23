@@ -1,0 +1,1395 @@
+{
+  "logo": {
+    "config": {
+      "src": "/builder/templates/basic/images/boundless-logo.png",
+      "title": "Boundless Logo",
+      "width": "132",
+      "height": "154",
+      "margin": {
+        "top": 0,
+        "left": 0,
+        "right": 0,
+        "bottom": 20
+      },
+      "padding": {
+        "top": 0,
+        "left": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "aspectRatio": true
+    },
+    "component": "logo"
+  },
+  "pages": {
+    "guestForm": {
+      "submit": {
+        "id": 1,
+        "config": {
+          "icon": "",
+          "color": "#ffffff",
+          "title": "Connect",
+          "margin": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "padding": {
+            "top": 6,
+            "left": 12,
+            "right": 12,
+            "bottom": 6
+          },
+          "fontSize": "16",
+          "showIcon": false,
+          "fontFamily": "Montserrat",
+          "fontWeight": 500,
+          "textAlignment": "center",
+          "backgroundColor": {
+            "hex": "#000000",
+            "rgba": {
+              "a": 0.6,
+              "b": 0,
+              "g": 0,
+              "r": 0
+            }
+          }
+        },
+        "component": "submit-button"
+      },
+      "children": [
+        {
+          "id": 2,
+          "config": {
+            "color": "#ffffff",
+            "links": [
+              {
+                "type": "internal_link",
+                "title": "",
+                "content": "",
+                "externalUrl": "",
+                "internalPage": ""
+              },
+              {
+                "type": "internal_link",
+                "title": "",
+                "content": "",
+                "externalUrl": "",
+                "internalPage": ""
+              },
+              {
+                "type": "internal_link",
+                "title": "",
+                "content": "",
+                "externalUrl": "",
+                "internalPage": ""
+              },
+              {
+                "type": "internal_link",
+                "title": "",
+                "content": "",
+                "externalUrl": "",
+                "internalPage": ""
+              }
+            ],
+            "title": "SIGN IN FOR WIFI ACCESS WITH",
+            "margin": {
+              "top": 10,
+              "left": 0,
+              "right": 0,
+              "bottom": 20
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "32",
+            "linkColor": "#007bff",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "textAlignment": "center"
+          },
+          "component": "heading"
+        },
+        {
+          "id": 3,
+          "config": {
+            "color": "#ffffff",
+            "label": "Label",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 6,
+              "left": 12,
+              "right": 12,
+              "bottom": 6
+            },
+            "fontSize": "16",
+            "fieldName": "first_name",
+            "showLabel": false,
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "labelColor": "#ffffff",
+            "labelMargin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 8
+            },
+            "placeholder": "First Name",
+            "fieldRequired": true,
+            "labelFontSize": "16",
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0.6,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "labelFontFamily": "Montserrat",
+            "labelFontWeight": 500,
+            "labelTextAlignment": "left",
+            "labelBackgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "text-input"
+        },
+        {
+          "id": 4,
+          "config": {
+            "color": "#ffffff",
+            "label": "Label",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 6,
+              "left": 12,
+              "right": 12,
+              "bottom": 6
+            },
+            "fontSize": "16",
+            "fieldName": "last_name",
+            "showLabel": false,
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "labelColor": "#ffffff",
+            "labelMargin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 8
+            },
+            "placeholder": "Last Name",
+            "fieldRequired": true,
+            "labelFontSize": "16",
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0.6,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "labelFontFamily": "Montserrat",
+            "labelFontWeight": 500,
+            "labelTextAlignment": "left",
+            "labelBackgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "text-input"
+        },
+        {
+          "id": 5,
+          "config": {
+            "color": "#ffffff",
+            "label": "Label",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 6,
+              "left": 12,
+              "right": 12,
+              "bottom": 6
+            },
+            "fontSize": "16",
+            "fieldName": "email",
+            "showLabel": false,
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "labelColor": "#ffffff",
+            "labelMargin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 8
+            },
+            "placeholder": "Email",
+            "fieldRequired": true,
+            "labelFontSize": "16",
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0.6,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "labelFontFamily": "Montserrat",
+            "labelFontWeight": 500,
+            "labelTextAlignment": "left",
+            "labelBackgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "email-input"
+        },
+        {
+          "id": 6,
+          "config": {
+            "color": "#ffffff",
+            "label": "Label",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 6,
+              "left": 12,
+              "right": 12,
+              "bottom": 6
+            },
+            "fontSize": "16",
+            "fieldName": "phone",
+            "showLabel": false,
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "labelColor": "#ffffff",
+            "labelMargin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 8
+            },
+            "placeholder": "Phone",
+            "fieldRequired": false,
+            "labelFontSize": "16",
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0.6,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "labelFontFamily": "Montserrat",
+            "labelFontWeight": 500,
+            "labelTextAlignment": "left",
+            "labelBackgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "phone-input"
+        },
+        {
+          "id": 7,
+          "config": {
+            "color": "#ffffff",
+            "label": "By using this internet connection, you agree to and accept the <terms and conditions of usage>",
+            "links": [
+              {
+                "type": "modal",
+                "title": "Terms and conditions",
+                "content": "<div>Content</div>",
+                "externalUrl": "",
+                "internalPage": ""
+              }
+            ],
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "16",
+            "fieldName": "terms",
+            "linkColor": "#ffffff",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "fieldRequired": true,
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "terms-checkbox"
+        },
+        {
+          "id": 8,
+          "config": {
+            "color": "#ffffff",
+            "label": "I agree to be contacted for marketing purposes.",
+            "links": [],
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "16",
+            "fieldName": "marketing_consent",
+            "linkColor": "#ffffff",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "fieldRequired": false,
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "terms-checkbox"
+        }
+      ]
+    },
+    "guestSocial": {
+      "children": [
+        {
+          "id": 1,
+          "config": {
+            "color": "#ffffff",
+            "title": "SIGN IN FOR WIFI ACCESS WITH",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 20
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "32",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "textAlignment": "center"
+          },
+          "component": "heading"
+        },
+        {
+          "id": 3,
+          "config": {
+            "icon": "fab fa-facebook-f",
+            "color": "#ffffff",
+            "title": "Login with Facebook",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 6,
+              "left": 12,
+              "right": 12,
+              "bottom": 6
+            },
+            "fontSize": "16",
+            "showIcon": true,
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0.6,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "facebook-button"
+        },
+        {
+          "id": 4,
+          "config": {
+            "icon": "fas fa-envelope",
+            "color": "#ffffff",
+            "title": "Login with Email",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 6,
+              "left": 12,
+              "right": 12,
+              "bottom": 6
+            },
+            "fontSize": "16",
+            "showIcon": true,
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0.6,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "email-button"
+        }
+      ]
+    },
+    "sponsorAuth": {
+      "submit": {
+        "id": 2,
+        "config": {
+          "icon": "",
+          "color": "#ffffff",
+          "title": "Authorize",
+          "margin": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 15
+          },
+          "padding": {
+            "top": 6,
+            "left": 12,
+            "right": 12,
+            "bottom": 6
+          },
+          "fontSize": "16",
+          "showIcon": false,
+          "fontFamily": "Montserrat",
+          "fontWeight": 500,
+          "textAlignment": "center",
+          "backgroundColor": {
+            "hex": "#000000",
+            "rgba": {
+              "a": 0.6,
+              "b": 0,
+              "g": 0,
+              "r": 0
+            }
+          }
+        },
+        "component": "submit-button"
+      },
+      "children": [
+        {
+          "id": 1,
+          "config": {
+            "color": "#ffffff",
+            "title": "Click here to authorize your visitor",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 20
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "22",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "textAlignment": "center"
+          },
+          "component": "heading"
+        }
+      ]
+    },
+    "sponsorCode": {
+      "submit": {
+        "id": 2,
+        "config": {
+          "icon": "",
+          "color": "#ffffff",
+          "title": "Submit",
+          "margin": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 15
+          },
+          "padding": {
+            "top": 6,
+            "left": 12,
+            "right": 12,
+            "bottom": 6
+          },
+          "fontSize": "16",
+          "showIcon": false,
+          "fontFamily": "Montserrat",
+          "fontWeight": 500,
+          "textAlignment": "center",
+          "backgroundColor": {
+            "hex": "#000000",
+            "rgba": {
+              "a": 0.6,
+              "b": 0,
+              "g": 0,
+              "r": 0
+            }
+          }
+        },
+        "component": "submit-button"
+      },
+      "children": [
+        {
+          "id": 3,
+          "config": {
+            "color": "#ffffff",
+            "label": "Label",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 6,
+              "left": 12,
+              "right": 12,
+              "bottom": 6
+            },
+            "fontSize": "16",
+            "fieldName": "code",
+            "showLabel": false,
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "labelMargin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 8
+            },
+            "placeholder": "Code",
+            "fieldRequired": true,
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0.6,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "text-input",
+          "labelColor": "#ffffff",
+          "labelFontSize": "16",
+          "labelFontFamily": "Montserrat",
+          "labelFontWeight": 500,
+          "labelTextAlignment": "left",
+          "labelBackgroundColor": {
+            "hex": "#000000",
+            "rgba": {
+              "a": 0,
+              "b": 0,
+              "g": 0,
+              "r": 0
+            }
+          }
+        }
+      ],
+      "accessLink": {
+        "id": 1,
+        "config": {
+          "color": "#ffffff",
+          "title": "Request a new access code",
+          "margin": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "padding": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "fontSize": "16",
+          "fontFamily": "Montserrat",
+          "fontWeight": 500,
+          "textAlignment": "left"
+        },
+        "component": "access-link"
+      }
+    },
+    "sponsorPage": {
+      "submit": {
+        "id": 1,
+        "config": {
+          "icon": "",
+          "color": "#ffffff",
+          "title": "Connect",
+          "margin": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "padding": {
+            "top": 6,
+            "left": 12,
+            "right": 12,
+            "bottom": 6
+          },
+          "fontSize": "16",
+          "showIcon": false,
+          "fontFamily": "Montserrat",
+          "fontWeight": 500,
+          "textAlignment": "center",
+          "backgroundColor": {
+            "hex": "#000000",
+            "rgba": {
+              "a": 0.6,
+              "b": 0,
+              "g": 0,
+              "r": 0
+            }
+          }
+        },
+        "component": "submit-button"
+      },
+      "children": [
+        {
+          "id": 2,
+          "config": {
+            "color": "#ffffff",
+            "title": "Fill out the form to connect to wifi",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 20
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "32",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "textAlignment": "center"
+          },
+          "component": "heading"
+        },
+        {
+          "id": 3,
+          "config": {
+            "color": "#ffffff",
+            "label": "Label",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 6,
+              "left": 12,
+              "right": 12,
+              "bottom": 6
+            },
+            "fontSize": "16",
+            "fieldName": "first_name",
+            "showLabel": false,
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "labelColor": "#ffffff",
+            "labelMargin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 8
+            },
+            "placeholder": "First Name",
+            "fieldRequired": true,
+            "labelFontSize": "16",
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0.6,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "labelFontFamily": "Montserrat",
+            "labelFontWeight": 500,
+            "labelTextAlignment": "left",
+            "labelBackgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "text-input"
+        },
+        {
+          "id": 4,
+          "config": {
+            "color": "#ffffff",
+            "label": "Label",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 6,
+              "left": 12,
+              "right": 12,
+              "bottom": 6
+            },
+            "fontSize": "16",
+            "fieldName": "last_name",
+            "showLabel": false,
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "labelColor": "#ffffff",
+            "labelMargin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 8
+            },
+            "placeholder": "Last Name",
+            "fieldRequired": true,
+            "labelFontSize": "16",
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0.6,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "labelFontFamily": "Montserrat",
+            "labelFontWeight": 500,
+            "labelTextAlignment": "left",
+            "labelBackgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "text-input"
+        },
+        {
+          "id": 5,
+          "config": {
+            "color": "#ffffff",
+            "label": "Label",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 6,
+              "left": 12,
+              "right": 12,
+              "bottom": 6
+            },
+            "fontSize": "16",
+            "fieldName": "email",
+            "showLabel": false,
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "labelColor": "#ffffff",
+            "labelMargin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 8
+            },
+            "placeholder": "Email",
+            "fieldRequired": true,
+            "labelFontSize": "16",
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0.6,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "labelFontFamily": "Montserrat",
+            "labelFontWeight": 500,
+            "labelTextAlignment": "left",
+            "labelBackgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "email-input"
+        },
+        {
+          "id": 6,
+          "config": {
+            "color": "#ffffff",
+            "title": "Sponsorship",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 20
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "32",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "textAlignment": "center"
+          },
+          "component": "heading"
+        },
+        {
+          "id": 7,
+          "config": {
+            "color": "#ffffff",
+            "label": "Label",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 6,
+              "left": 12,
+              "right": 12,
+              "bottom": 6
+            },
+            "fontSize": "16",
+            "fieldName": "sponsor_email",
+            "showLabel": false,
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "labelColor": "#ffffff",
+            "labelMargin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 8
+            },
+            "placeholder": "Sponsor Email",
+            "fieldRequired": true,
+            "labelFontSize": "16",
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0.6,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "labelFontFamily": "Montserrat",
+            "labelFontWeight": 500,
+            "labelTextAlignment": "left",
+            "labelBackgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "email-input"
+        },
+        {
+          "id": 8,
+          "config": {
+            "color": "#ffffff",
+            "label": "By using this internet connection, you agree to and accept the <terms and conditions of usage>",
+            "links": [
+              {
+                "type": "modal",
+                "title": "Terms and conditions",
+                "content": "<div>Content</div>",
+                "externalUrl": "",
+                "internalPage": ""
+              }
+            ],
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "16",
+            "fieldName": "terms",
+            "linkColor": "#ffffff",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "fieldRequired": true,
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "terms-checkbox"
+        }
+      ]
+    },
+    "sponsorWait": {
+      "children": [
+        {
+          "id": 1,
+          "config": {
+            "color": "#ffffff",
+            "title": "Please wait! Your authorization is in progress..",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 20
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "32",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "textAlignment": "center"
+          },
+          "component": "heading"
+        },
+        {
+          "id": 2,
+          "config": {
+            "color": "#ffffff",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 20
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "50",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "loaderType": "fas fa-spinner fa-spin",
+            "textAlignment": "center",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "loader"
+        },
+        {
+          "id": 3,
+          "config": {
+            "color": "#ffffff",
+            "title": "Request a new access code",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "16",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "textAlignment": "left"
+          },
+          "component": "access-link"
+        }
+      ]
+    },
+    "smsAccessCode": {
+      "submit": {
+        "id": 2,
+        "config": {
+          "icon": "",
+          "color": "#ffffff",
+          "title": "Submit",
+          "margin": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 15
+          },
+          "padding": {
+            "top": 6,
+            "left": 12,
+            "right": 12,
+            "bottom": 6
+          },
+          "fontSize": "16",
+          "showIcon": false,
+          "fontFamily": "Montserrat",
+          "fontWeight": 500,
+          "textAlignment": "center",
+          "backgroundColor": {
+            "hex": "#000000",
+            "rgba": {
+              "a": 0.6,
+              "b": 0,
+              "g": 0,
+              "r": 0
+            }
+          }
+        },
+        "component": "submit-button"
+      },
+      "children": [
+        {
+          "id": 3,
+          "config": {
+            "color": "#ffffff",
+            "label": "Label",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 15
+            },
+            "padding": {
+              "top": 6,
+              "left": 12,
+              "right": 12,
+              "bottom": 6
+            },
+            "fontSize": "16",
+            "fieldName": "code",
+            "showLabel": false,
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "labelColor": "#ffffff",
+            "labelMargin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 8
+            },
+            "placeholder": "Code",
+            "fieldRequired": true,
+            "labelFontSize": "16",
+            "textAlignment": "left",
+            "backgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0.6,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "labelFontFamily": "Montserrat",
+            "labelFontWeight": 500,
+            "labelTextAlignment": "left",
+            "labelBackgroundColor": {
+              "hex": "#000000",
+              "rgba": {
+                "a": 0,
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            }
+          },
+          "component": "text-input"
+        }
+      ],
+      "accessLink": {
+        "id": 1,
+        "config": {
+          "color": "#ffffff",
+          "title": "Request a new access code",
+          "margin": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "padding": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "fontSize": "16",
+          "fontFamily": "Montserrat",
+          "fontWeight": 500,
+          "textAlignment": "left"
+        },
+        "component": "access-link"
+      }
+    },
+    "accessGrantedPage": {
+      "submit": {
+        "id": 1,
+        "config": {
+          "icon": "",
+          "color": "#ffffff",
+          "title": "Login",
+          "margin": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 15
+          },
+          "padding": {
+            "top": 6,
+            "left": 12,
+            "right": 12,
+            "bottom": 6
+          },
+          "fontSize": "16",
+          "showIcon": false,
+          "fontFamily": "Montserrat",
+          "fontWeight": 500,
+          "textAlignment": "center",
+          "backgroundColor": {
+            "hex": "#000000",
+            "rgba": {
+              "a": 0.6,
+              "b": 0,
+              "g": 0,
+              "r": 0
+            }
+          }
+        },
+        "component": "submit-button"
+      },
+      "children": [
+        {
+          "id": 2,
+          "config": {
+            "color": "#ffffff",
+            "title": "Access Granted! Please click the button below to login",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 20
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "22",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "textAlignment": "center"
+          },
+          "component": "heading"
+        }
+      ]
+    },
+    "wifiUnavailablePage": {
+      "children": [
+        {
+          "id": 1,
+          "config": {
+            "color": "#ffffff",
+            "title": "Sorry, the wifi is currently unavailable",
+            "margin": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 20
+            },
+            "padding": {
+              "top": 0,
+              "left": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "fontSize": "30",
+            "fontFamily": "Montserrat",
+            "fontWeight": 500,
+            "textAlignment": "center"
+          },
+          "component": "heading"
+        }
+      ]
+    }
+  },
+  "title": "Splash Page",
+  "settings": {
+    "fontFamilies": [
+      "Open Sans",
+      "Montserrat",
+      "Lato",
+      "Roboto",
+      "Source Sans Pro",
+      "Oswald",
+      "Raleway"
+    ]
+  },
+  "backgrounds": {
+    "mobile": "/builder/templates/basic/images/bg-default.jpeg",
+    "tablet": "/builder/templates/basic/images/bg-default.jpeg",
+    "desktop": "/builder/templates/basic/images/bg-default.jpeg",
+    "useDifferentImage": false
+  },
+  "backgroundType": "image",
+  "backgroundColor": {
+    "hex": "#000000",
+    "rgba": {
+      "a": 0.6,
+      "b": 0,
+      "g": 0,
+      "r": 0
+    }
+  }
+}

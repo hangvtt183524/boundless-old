@@ -1,0 +1,113 @@
+@import "../../../styles/v2/colors";
+
+.base-multi-filter {
+  display: flex;
+  position: relative;
+
+  &__add-filter {
+    width: 100px;
+    display: inline-block;
+    background: #1146AE;
+    border-radius: 4px 0 0 4px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+  }
+  &__dropdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 168px;
+    padding: 0 0 11px 0;
+    font-size: 15px;
+    line-height: 41px;
+    text-align: left;
+    background: #fff;
+    border: 2px solid #1c51ba;
+    box-sizing: border-box;
+    border-radius: 4px;
+    z-index: 2;
+
+    &__header {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      color: #C8CCD5;
+      padding: 0 12px;
+      &__icon {
+        color: #9AA9C4;
+        position: absolute;
+        right: 10px;
+        line-height: 40px;
+      }
+    }
+    &__body {
+      &__item {
+        padding: 0 12px;
+        cursor: pointer;
+
+        &--selected {
+          background: #EFF3F8;
+        }
+      }
+    }
+  }
+  &__option {
+    display: inline-block;
+    padding: 0 13px;
+    line-height: 35px;
+    border: 1px solid #C8CCD5;
+    border-left: none;
+
+    &:last-child {
+      border-radius: 0 4px 4px 0;
+    }
+
+    &__title {
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 35px;
+      color: #53575A;
+      float: left;
+    }
+    &__value ::v-deep {
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 35px;
+      color: #53575A;
+      float: left;
+      margin-left: 10px;
+
+      .base-text-input {
+        input {
+          outline: none;
+          border: none;
+          padding: 9px 13px;
+          width: 116px;
+
+          &:focus, &:active {
+            border: none;
+          }
+        }
+      }
+    }
+    &__close-icon {
+      float: left;
+      cursor: pointer;
+      .v-icon {
+        font-size: 12px;
+        color: #8796B2;
+        line-height: 17px;
+      }
+    }
+  }
+}

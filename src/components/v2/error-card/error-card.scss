@@ -1,0 +1,32 @@
+@import "../../../styles/v2/colors";
+
+.error-card {
+  padding: 20px 27px;
+  border: 2px solid $danger;
+  border-radius: 4px;
+  background-color: rgba($danger, 0.1);
+  position: relative;
+
+  &__title {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__content {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__close-icon {
+    position: absolute;
+    top: 20px;
+    right: 27px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

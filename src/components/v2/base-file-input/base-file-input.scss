@@ -1,0 +1,19 @@
+@import "../../../styles/v2/colors";
+
+.base-file-input {
+
+  .base-button {
+    padding: 0 20px;
+  }
+
+  &__file-name {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 36px;
+    color: $text-medium;
+    margin-left: 15px;
+  }
+
+}

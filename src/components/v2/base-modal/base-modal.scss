@@ -1,0 +1,10 @@
+@import "styles/v2/colors.scss";
+
+.v-dialog {
+
+  &__content {
+    &--active {
+      background-color: rgba($blue-dark, .9);
+    }
+  }
+}

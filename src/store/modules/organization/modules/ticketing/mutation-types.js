@@ -1,0 +1,1 @@
+export const UPDATE_TICKETS = 'UPDATE_TICKETS'

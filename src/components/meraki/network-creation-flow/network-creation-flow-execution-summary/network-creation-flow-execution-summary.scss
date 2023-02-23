@@ -1,0 +1,52 @@
+@import "../../../../styles/v2/colors";
+@import "../../../../styles/v2/base";
+
+
+.network-creation-flow-execution-summary {
+  label {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 41px;
+    color: $text-medium;
+    display: block;
+  }
+
+  &__parameter {
+    margin-bottom: 44px;
+  }
+
+  .download-link {
+    float: right;
+    cursor: pointer;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right;
+    color: $green-medium;
+    text-decoration-line: underline;
+  }
+
+  &__events {
+    list-style: none;
+    padding-left: 0;
+
+    &__event {
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 32px;
+      border-bottom: 1px solid $gray-xlight;
+
+      &__label {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../../styles/v2/colors";
+
+.base-radio {
+  display: inline-block;
+  cursor: pointer;
+
+  label {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-dark;
+    margin-left: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+  // Hide actual radio button
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .radio-display {
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border-radius: 10px;
+    border: 2px solid #C4C4C4;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
+    vertical-align: middle;
+
+    .checked-icon {
+      color: $green-medium;
+      font-size: 8px;
+      visibility: hidden;
+      display: inline;
+      position: relative;
+      top: -6px;
+
+      transition: none;
+    }
+  }
+
+  input:checked ~ .radio-display {
+    background-color: rgba(#65D965, 0.3);
+    border-color: $green-medium;
+
+    .checked-icon {
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import "../../../styles/v2/colors";
+
+.base-filter {
+  box-sizing: border-box;
+
+  &--checkbox-container {
+    width: 36px;
+    min-width: 36px;
+    max-width: 36px;
+    margin-top: 2px;
+  }
+
+  &--header {
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: $text-medium;
+
+    &--filter-name {
+      cursor: pointer;
+      white-space: nowrap;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+      user-select: none;
+    }
+
+    &--icon {
+      color: $text-medium;
+      font-size: 15px;
+    }
+  }
+
+  &--sections {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    padding: 2px;
+    width: 300px;
+
+    .base-filter-ssids {
+      .base-filter--ssid {
+        &:nth-child(2n + 1) {
+          background-color:  rgba(#EFF3F8, 0.5);
+        }
+        &:nth-child(2n) {
+          background-color: $white;
+        }
+      }
+    }
+
+    .base-filter--sd-wan {
+      box-sizing: content-box;
+      padding: 10px;
+    }
+  }
+
+  &--section-item {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $text-medium;
+    line-height: 32px;
+    height: 32px;
+
+    .section-name-container {
+      cursor: pointer;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &--icon {
+      font-size: 15px;
+    }
+  }
+
+  .slide-enter-active {
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+  }
+
+  .slide-leave-active {
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+  }
+
+  .slide-enter-to, .slide-leave {
+    max-height: 100px;
+    overflow: hidden;
+  }
+
+  .slide-enter, .slide-leave-to {
+    overflow: hidden;
+    max-height: 0;
+  }
+}

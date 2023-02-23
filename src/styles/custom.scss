@@ -1,0 +1,139 @@
+.container {
+  padding: 16px;
+}
+.container.grid-list-md {
+  padding: 8px;
+}
+.v-text-field:not(.search-input):not(.v-textarea) {
+  height: 74px;
+  margin: 0px;
+  padding-top: 18px;
+}
+
+.v-input__append-inner {
+  padding: 0;
+  .v-input__icon--append {
+    width: 36px;
+    .v-input__icon {
+      .v-icon {
+        width: 36px;
+        height: 24px;
+        padding: 0 6px;
+      }
+    }
+  }
+}
+
+.toolbar-actions {
+  .v-menu {
+    .v-menu__activator {
+      min-width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.sidebar-main {
+  max-height: 100vh !important;
+}
+
+.v-datatable__actions__select .v-select__selections .v-select__selection--comma {
+  color: rgba(0,0,0,.54)!important;
+}
+.v-input--selection-controls:not(.v-input--radio-group) {
+  margin: 0px;
+  padding: 0px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.v-input--switch__track {
+  background-color: currentColor;
+  color: inherit;
+  position: absolute;
+  height: 14px;
+  top: 50%;
+  left: 0;
+  width: 34px;
+  border-radius: 8px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.38);
+  opacity: 1;
+
+}
+.v-input--switch__track.deep-purple--text {
+  background-color: #9575cd!important;
+  opacity: 0.5;
+}
+
+.v-input--switch__thumb {
+  left: -1px;
+}
+
+.v-input--switch__thumb.deep-purple--text {
+  left: 0px;
+}
+
+.v-card__actions .v-btn {
+  margin: 0 4px !important;
+}
+
+// .v-input {
+
+// }
+.v-text-field:not(.search-input):not(.v-textarea) {
+  padding-top: 17px;
+  .v-label--active {
+    transform: translateY(-19px) scale(.75) !important;
+  }
+}
+
+.v-select__slot {
+  .v-tooltip {
+    .v-icon {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+.v-dialog--scrollable.v-dialog {
+  padding-right: 0 !important;
+  @media (max-width: 767px) {
+    padding: 20px 0 0 10px !important;
+    .v-card {
+      & > .dialog-heading {
+        padding-left: 10px;
+      }
+    }
+  }
+  .v-icon.v-icon.v-icon--link {
+    z-index: 999;
+  }
+  .theme--light.v-sheet {
+    background-color: unset;
+    box-shadow: none;
+    .v-card__text {
+      padding-top: 0;
+      padding-right: 60px;
+      @media (max-width: 767px) {
+        padding-right: 16px;
+      }
+    }
+    .v-card__actions {
+      padding: 5px 8px 0;
+      margin-right: 50px;
+      @media (max-width: 767px) {
+        margin-right: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+// .v-dialog__content.v-dialog__content--active {
+//   z-index: 9999 !important;
+// }

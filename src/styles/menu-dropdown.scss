@@ -1,0 +1,54 @@
+.dropdown-item-list {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #d8deeb;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #9aa9c4;
+    border: 1px solid #9aa9c4;
+    border-radius: 5px;
+  }
+
+  .list-item {
+    font-size: 14px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #000;
+    line-height: 17px;
+    padding: 10px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2px;
+    position: relative;
+
+    .list-item-icon {
+      display: none;
+      svg {
+        color: $primary;
+      }
+    }
+
+    &:hover {
+      background-color: lighten($light-gray, 5%);
+    }
+
+    &.active {
+      background-color: $item-selected-background;
+      color: $primary;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      .list-item-icon {
+        display: block;
+      }
+    }
+  }
+}

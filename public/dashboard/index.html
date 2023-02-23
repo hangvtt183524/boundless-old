@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-git-branch='<%= process.env.VUE_APP_BRANCH %>' data-git-commit="<%= process.env.VUE_APP_COMMITHASH %>" data-git-revision="<%= process.env.VUE_APP_VERSION %>">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Boundless Digital</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:200,300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="/loading.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css"> -->
+    <!-- <link rel="stylesheet" href="/builder/common/fontawesome/css/solid.min.css"> -->
+    <!-- <link rel="stylesheet" href="/builder/common/fontawesome/css/fontawesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/regular.css"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css"> -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/brands.js"></script> -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/solid.js"></script> -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/fontawesome.js"></script> -->
+    <!-- <script defer src="/builder/common/fontawesome/js/solid.min.js"></script> -->
+    <!-- <script defer src="/builder/common/fontawesome/js/fontawesome.min.js"></script> -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/regular.js"></script> -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/v4-shims.js"></script> -->
+
+    <!-- <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDUCOZkQSJrvWTqmOxchMF1YfHRff4ZvQk&libraries=places"></script> -->
+    <script type="text/javascript">
+      function loadScript(url) {
+        var script = document.createElement('script')
+        script.onload = function () {
+          console.log('googlemaps api is loaded')
+        }
+        script.src = url
+
+        document.head.appendChild(script)
+      }
+      // This is being loaded dynamically since it has conflict with main dashboard code on core-js if it runs before it
+      // Github issue solution link: https://github.com/zloirock/core-js/issues/566#issuecomment-514667729
+      window.addEventListener('load', function (event) {
+        loadScript("//maps.googleapis.com/maps/api/js?key=AIzaSyDUCOZkQSJrvWTqmOxchMF1YfHRff4ZvQk&libraries=places")
+      })
+    </script>
+
+    <script>
+      var fullstory_enabled = "<%= process.env.VUE_APP_FULLSTORY %>";
+      if (fullstory_enabled === 'true') {
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+        window['_fs_org'] = 'S1ZPA';
+        window['_fs_namespace'] = 'FS';
+        (function(m,n,e,t,l,o,g,y){
+            if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+            g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+            o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+            y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+            g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+            g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+            g.log = function(a,b){g("log",[a,b])};
+            g.consent=function(a){g("consent",!arguments.length||a)};
+            g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+            g.clearUserCookie=function(){};
+            g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+            if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+        })(window,document,window['_fs_namespace'],'script','user');
+      }
+
+      </script>
+
+      <script>
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+        analytics.load("<%= process.env.VUE_APP_SEGMENT_API_KEY %>");
+        }}();
+      </script>
+
+      <script>
+        var pendoApiKey = "<%= process.env.VUE_APP_PENDO_API_KEY %>"
+        if (pendoApiKey) {
+          (function(apiKey){
+            (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+              v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+                o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+              y=e.createElement(n);y.async=!0;y.src='https://cdn.eu.pendo.io/agent/static/'+apiKey+'/pendo.js';
+              z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+          })(pendoApiKey);
+        }
+      </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but the Boundless Dashboard doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div class="loading" id="loader">Loading&#8230;</div>
+    <div id="app">
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

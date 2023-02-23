@@ -1,0 +1,43 @@
+.DS_Store
+node_modules
+/dist
+splash.config.js
+tmp
+
+# local env files
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.dir-locals.el
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+/backup
+
+# Other
+/test/unit/coverage/
+/test/e2e/reports/
+/tests/e2e/screenshots
+/tests/e2e/videos
+
+selenium-debug.log
+private/
+*.log
+_index.html
+
+cypress.env.json
+cypress/screenshots/
+cypress/videos/
+
+.npmrc
+.config
+.npm

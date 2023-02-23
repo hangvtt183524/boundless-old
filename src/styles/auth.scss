@@ -1,0 +1,9 @@
+.auth {
+    #toast-container>div {
+      opacity: 1;
+    }
+    #toast-container.toast-top-full-width>div {
+      margin: 0 5px;
+      width: calc(100% - 10px);
+    }
+  }

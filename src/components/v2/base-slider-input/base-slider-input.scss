@@ -1,0 +1,26 @@
+@import "../../../styles/v2/colors";
+
+.base-slider-input {
+
+  &--reversed {
+    .vue-slider ::v-deep {
+      .vue-slider-process {
+        background-color: $gray-light;
+      }
+
+      .vue-slider-rail {
+        background-color: $green-medium;
+      }
+    }
+  }
+
+  &--empty {
+    .vue-slider ::v-deep {
+      .vue-slider-dot {
+        display: none;
+      }
+    }
+  }
+}
+
+

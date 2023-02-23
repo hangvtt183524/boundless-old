@@ -1,0 +1,34 @@
+@import "styles/colors.scss";
+
+.selection-panel {
+  flex-grow: 1;
+  flex-basis: 0;
+
+  border: 1px solid $blue;
+  border-radius: 7px;
+  background: transparent;
+  color: $blue;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 25px 15px !important;
+  position: relative;
+  text-align: center;
+  transition: all 0.5s;
+
+  .tooltip-input {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+
+  &.active >>>,
+  &.is-btn:hover >>> {
+    background: $blue;
+    color: white;
+
+    .tooltip-icon {
+      color: #fff !important;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../../styles/v2/colors";
+
+.data-size-input {
+
+  label {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 41px;
+    color: $text-medium;
+    margin-right: 30px;
+  }
+
+  &__input-container {
+    position: relative;
+
+    ::v-deep {
+      .base-text-input {
+        display: inline-block;
+        width: 120px;
+        vertical-align: middle;
+
+        input {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          border-right-width: 0;
+        }
+      }
+
+      .base-select {
+        display: inline-block;
+        vertical-align: middle;
+
+        .select-container {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+}

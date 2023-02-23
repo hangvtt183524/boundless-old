@@ -1,0 +1,1 @@
+export const SET_SYSLOG_SERVERS = 'SET_SYSLOG_SERVERS'

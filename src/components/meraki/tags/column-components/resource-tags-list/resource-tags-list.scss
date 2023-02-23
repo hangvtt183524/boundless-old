@@ -1,0 +1,29 @@
+@import "../../../../../styles/v2/colors";
+
+.resource-tags {
+  &__list {
+    float: left;
+
+    &__item {
+      margin: 2px;
+      padding: 2px 11px 2px 9px;
+      background: #E5EDF5;
+      border: 1px solid #E5EDF5;
+      box-sizing: border-box;    
+      display: inline-block;
+      user-select: none;
+
+      .item_text {
+        margin-right: 5px;
+        vertical-align: middle;
+        &.active {
+          font-weight: bold;
+        }
+      }
+      .item_remove {
+        font-size: 12px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

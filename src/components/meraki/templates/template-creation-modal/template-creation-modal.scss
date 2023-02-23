@@ -1,0 +1,53 @@
+@import "../../../../styles/v2/colors";
+
+.template-creation-modal {
+  position: relative;
+
+  &__header {
+
+  }
+
+  &__title {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+    color: $blue-dark;
+  }
+
+  &__content {
+    margin-top: 36px;
+
+    &__source-selection {
+      .base-radio {
+        margin-top: 10px;
+        display: block;
+      }
+    }
+
+    &__details {
+      margin-top: 50px;
+    }
+  }
+
+  &__footer {
+    margin-top: 70px;
+
+    .base-button {
+      margin-right: 24px;
+    }
+  }
+
+  &__loading-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}

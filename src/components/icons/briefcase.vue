@@ -1,0 +1,4 @@
+<template>
+  <svg class="s-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 34">
+  <defs><clipPath id="clip-path"><rect width="36" height="34" style="fill:none"/></clipPath></defs><title>briefcase</title><g style="clip-path:url(#clip-path)"><rect x="1" y="7" width="34" height="26" rx="4" ry="4" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:2px"/><path d="M25,7H11V4a3,3,0,0,1,3-3h8a3,3,0,0,1,3,3Z" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:2px"/><line x1="1" y1="19" x2="14" y2="19" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:2px"/><line x1="22" y1="19" x2="34.5" y2="19" style="fill:none;stroke:currentColor;stroke-linejoin:bevel;stroke-width:2px"/><rect x="14" y="16" width="8" height="6" rx="1" ry="1" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:2px"/></g></svg>
+</template>

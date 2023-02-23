@@ -1,0 +1,18 @@
+@import "../../../../../styles/v2/colors";
+
+.resources-list-body {
+  padding: 0 27px;
+  height: 100%;
+  &__table {
+    position: relative;
+    height: 100%;
+  }
+}
+
+.base-table ::v-deep {
+  .v-table {
+    .header-cell:first-child {
+      width: 35px;
+    }
+  }
+}

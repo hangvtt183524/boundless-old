@@ -1,0 +1,78 @@
+@import "../../../../styles/v2/colors";
+
+.template-setting-category-list-item {
+  border-bottom: solid $gray-medium 3px;
+
+  &__header {
+    cursor:pointer;
+    user-select: none;
+    padding: 0 15px;
+    height: 42px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &__title {
+      margin-left: 18px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      color: $blue-dark;
+    }
+
+    &__icon {
+      color: $blue-dark;
+      margin-left: auto;
+    }
+
+    &:hover {
+      background-color: rgba(#4C83F0, .15);
+    }
+  }
+
+  &__sections {
+    &__section {
+      height: 36px;
+      line-height: 36px;
+      padding: 0 15px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      &:nth-child(odd) {
+        background-color: rgba(239,243,248, 0.5);
+      }
+
+      &__title {
+        margin-left: 18px;
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: $text-medium;
+        vertical-align: middle;
+
+        display: inline-block;
+        max-width: 85%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      &:hover {
+        background-color: rgba(#4C83F0, .15);
+      }
+
+      &--selected {
+        background-color: $blue-dark !important;
+
+        &:hover {
+          background-color: $blue-dark !important;
+        }
+        .template-setting-category-list-item__sections__section__title {
+          color: $white
+        }
+      }
+    }
+  }
+}

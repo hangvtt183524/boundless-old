@@ -1,0 +1,35 @@
+@import "../../../../styles/v2/colors";
+
+.network-creation-flow-step {
+  padding: 44px 40px;
+  border-bottom: 3px solid $gray-xlight;
+
+  &__step-selection {
+    padding-right: 30px;
+    border-right: 3px solid $gray-xlight;
+  }
+
+  &__fields {
+    padding-left: 30px;
+
+    &__field {
+      padding-right: 10px;
+
+      ::v-deep label {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__actions {
+    text-align: right;
+
+    &__action {
+      font-size: 36px;
+      cursor: pointer;
+      margin-top: 23px;
+      margin-left: 20px;
+      user-select: none;
+    }
+  }
+}

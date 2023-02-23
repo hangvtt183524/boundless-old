@@ -1,0 +1,230 @@
+@import './v2/colors.scss';
+
+.application.theme--light {
+  background: $gray-xlight !important;
+}
+
+.application {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.v-menu__content {
+  box-shadow: none;
+}
+
+.v-dialog {
+  background: #ffffff !important;
+  padding: 40px 40px 40px 40px !important;
+  border-radius: 6px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.small-heading {
+  line-height: 1.5;
+  font-size: 23px;
+  color: #354c77;
+  font-weight: normal;
+  position: relative;
+}
+#toast-container>div {
+  opacity: 1;
+}
+#toast-container.toast-top-full-width>div {
+  margin-left: 265px;
+  width: calc(100% - 265px);
+  height: 100px;
+  margin-bottom: 0;
+  @media screen and (max-width: 1024px) {
+    margin: 0;
+    width: 100%;
+  }
+}
+.toast-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.toast-message{
+  font-size: 16px;
+}
+
+.toast-error {
+  background-color: #FCF4F4;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: $text-medium !important;
+  border-bottom: solid 4px $danger;
+}
+
+.toast-success {
+  background: #ECFAEE;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: $text-medium !important;
+  border-bottom: solid 4px $green-medium;
+}
+
+#toast-container>.toast-success {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIBSURBVHgBvZW/axRBFMe/76GNoh6YawLKWYggxlvBSosoaKsRckGwcAURq4hF2iSFvfcHCJrO3An++AOiKbQx4BptrIwKaTbCqZgmsC/vTS53lzC7ub0c+cBwuze7n3nzZt8MIYOBenAJSK6z0IgwChBthiACIxKhmZVK9C7tfUqTMslTEZSwA0RYEtB0PBrN7CgvvgiqEHmA3Eg1riw+TJUX6+VP+hOgVzRd8djnc5u33BJbxLsRG4SgWD/7uH1r4loQQnOMPqFrcNkW2kVOLFPoI9wMlOzLIMhb5ORi8Tx+/V/Gz9Vlb79Fz0RyGzmZOH0fL4efuHb8wKD/oUTrQ4fItYgmtmYcOziICzoDH0Q0Yjn3yh+VJzB3ZXZLZJ1i4/mPN6757Siw7/+bpWu4d/IWzhROtabuE49/nEQGhX06QqO1ZzT52viGP2v/cGT/ITf1uauzOKzXOcQORqLybZj8xvxdN4DRi9iqlbV4Xvn6bIDww5atonvxBhEL+HVa7/t4AeMLk+3r7sUaePKsWf7l75r7UtqDlpa/zRR1aV7SDeyE+1qE6E7Ws7nESsIybb9OvnGaSBV9QBKp/h5ddAfH3uznRlyxjt5mYBF3ig3vGXq0NhQyeCprkTui1TM0CVfGvsxv76Ks9wZqQ8MEDu2EQTtdVtENEa0PrRGfdJN1lXDRtFuQu1cAAAAASUVORK5CYII=)!important;
+}
+
+#toast-container>.toast-error {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAXCAYAAACI2VaYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHPSURBVHgBtZcxUsJAFIbfxtBAIYVhxgpsqfQEegNtYNOJB2DUC4AlnbmB0pHQ4A30BHAD0zlDHKWBBifrWzJ0jvtvCN9MhgH+JD/79n+8CNqBxPcvKE0vhRBX/Laq+Nh8odSMP5uthRgej0avlBNBOdCmhFJPbKZh0vINYjb7cBRFQ7LE2tynlAGbuiV7Ai8M721OsDKXtNtTEuKU8sLl9qLoDJU7qFCv2E7GNHx+IuUjKofMzX2/YyqlqFTosNcjx/PIwN2HDlJR5hyl+kZNuUylZpMQShwmRGc0p5OJpNIGfT1k9YzmuGVc0x5wuT+aNEZz/CuhEKSrVfaaJIicVNa4/wXZc5A5tVySDVyRqkkDt5LCEaIQcwsCQUuKYg6EhbmvbheV6r08M2mQQEwI4ICbb3UwILdeJ5DdzfHeeCEAlxuw22jQAR8IIk2fjRoCmEv5LoBGrM39xLFJpqsR18LwxKSD0sqD4w2iQ4xtbsrzHaRDRF42zQZUBEoF6OBpN89JOSWwKf+F4nmuto95TsOTrL5wvhXkFbMxpsn1DKHnO75ZHwmJ3vyczI43Hr+RJbnMbflutc7XjtMRWam35V7oxp0qNeH/z0keU1t+AYo8nEVbUq96AAAAAElFTkSuQmCC)!important;
+}
+
+.toast-title {
+  margin-left: 8px;
+}
+.toast-message {
+  margin-left: 8px;
+}
+
+#toast-container>.toast-error {
+  background-position: 10px 20px !important;
+}
+
+#toast-container>.toast-success {
+  background-position: 20px 20px !important;
+}
+
+.toast-close-button {
+  position: relative;
+  right: 28px;
+  top: 8px;
+  float: right;
+  font-size: 20px;
+  color: $text-medium;
+}
+
+.v-tooltip__content {
+  max-width: 400px !important;
+  box-sizing: initial;
+  padding: 10px 15px;
+  opacity: 1 !important;
+  span {
+    font-size: 13px !important;
+    font-family: 'Fira Sans', sans-serif !important;
+    color: black !important;
+  }
+  &::after, &::before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &::after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #f5f5f5;
+    border-width: 5px;
+    margin-left: -5px;
+  }
+  &::before {
+    border-color: rgba(#A3A3A3, 0);
+    border-top-color: #a3a3a3;
+    border-width: 6px;
+    margin-left: -6px;
+  }
+}
+
+
+.contact-tooltip {
+  max-width: 400px !important;
+  box-sizing: initial;
+  padding: 10px 15px;
+  opacity: 1 !important;
+  span {
+    font-size: 13px !important;
+    font-family: 'Fira Sans', sans-serif !important;
+    color: black !important;
+  }
+  &::after, &::before {
+    top: -10px;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &::after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #f5f5f5;
+    border-width: 5px;
+    margin-left: -5px;
+  }
+  &::before {
+    border-color: rgba(#A3A3A3, 0);
+    border-bottom-color: #ececec;
+    border-width: 6px;
+    margin-left: -6px;
+    margin-top: -2px;
+  }
+}
+
+.pre-wrap {
+  white-space: pre-wrap !important;
+}
+
+.column-link {
+  color: #9ba9c4;
+  padding-bottom: 1px;
+  border: 0px;
+  border-bottom: 1px;
+  border-style: dashed;
+}
+
+
+.selectUnitWrapper .multiselect {
+  padding: 3px 0;
+  height: 20px;
+  color: #9ba9c4;
+  font-size: 12px;
+}
+.selectUnitWrapper .multiselect .multiselect__single {
+  font-size: 14px;
+}
+.selectUnit.multiselect .multiselect__select {
+  padding: 4px 2px;
+}
+
+.page-builder .multiselect .multiselect__input {
+  width: 50% !important;
+  font-size: 14px;
+  font-weight: bold;
+  border-style: none !important;
+}
+.selectUnit.multiselect .multiselect__content-wrapper {
+  width: 90% !important;
+}
+
+.v-expansion-panel .v-expansion-panel__container {
+  background: $gray-xlight !important;
+}
+
+.v-expansion-panel .v-expansion-panel__container {
+  input {
+    border: 1px solid $gray-xlight;
+  }
+}
+.v-expansion-panel__header {
+  padding: 0;
+  min-height: 40px;
+  background: #9ba9c4;
+}
+.theme--light.v-expansion-panel .v-expansion-panel__container .v-expansion-panel__header .v-expansion-panel__header__icon .v-icon {
+  color: rgba(255, 255, 255, 0.7);
+  // color: white
+}

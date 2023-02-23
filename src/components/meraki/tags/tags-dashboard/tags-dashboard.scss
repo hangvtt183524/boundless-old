@@ -1,0 +1,48 @@
+@import "../../../../styles/v2/colors";
+
+.tags-dashboard {
+  width: 100%;
+  position: relative;
+  background: $white;
+
+  &__header {
+    height: 65px;
+    line-height: 65px;
+    padding: 0 27px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+
+    .tab-header {
+      min-width: 150px;
+      height: 100%;
+    }
+
+    .tab-header--underlined {
+      height: 100%;
+    }
+
+    &__organization-select {
+      float: right;
+      min-width: 180px;
+    }
+  }
+
+  &__loading-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media only screen and (min-width: 1264px) {
+  .tags-dashboard {
+    height: calc(100vh - 160px);
+  }
+}

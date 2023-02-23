@@ -1,0 +1,48 @@
+@import "../../../styles/v2/colors";
+
+.base-n-switch {
+  box-sizing: border-box;
+  display: inline-block;
+
+  &__option {
+    display: inline-block;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: $white;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: $text-medium;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:first-child {
+      border-radius: 4px 0 0 4px;
+      border: 1px solid $blue-reserve;
+    }
+
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0 0 0 0;
+      border: 1px solid $blue-reserve;
+      border-left-width: 0;
+    }
+
+    &:last-child {
+      border-radius: 0 4px 4px 0;
+      border: 1px solid $blue-reserve;
+      border-left-width: 0;
+    }
+
+    &--active {
+      background-color: $blue-reserve;
+      color: $white;
+    }
+  }
+}

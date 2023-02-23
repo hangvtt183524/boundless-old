@@ -1,0 +1,74 @@
+@import "../../../styles/v2/colors";
+
+.vue-slider {
+  .vue-slider-process {
+    background-color: $green-medium;
+  }
+  &.vue-slider-disabled {
+    opacity: .5;
+  }
+  .vue-slider-rail {
+    border-radius: 4px;
+    background-color: $gray-light;
+  }
+  .vue-slider-mark {
+    color: $text-dark;
+    font-size: 12px;
+    padding-top: 8px;
+    top: 10px;
+    width: fit-content !important;
+    background: transparent;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+
+    &:first-child {
+      margin-left: 1px;
+    }
+    &:last-child {
+      margin-left: -1px;
+    }
+  }
+  .vue-slider-dot {
+    z-index: 10 !important;
+    background-color: $white;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
+    border-radius: 50%;
+  }
+}
+.vue-slider .vue-slider-piecewise-dot {
+  position: absolute;
+  left: 50%;
+  top: 10px !important;
+  display: inline-block;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  transition: all .3s;
+  background-color: $green-medium;
+  visibility: visible;
+  width: 1px !important;
+  height: 16px !important;
+}
+
+.vue-slider.vue-slider-horizontal-reverse .vue-slider-piecewise-label,
+.vue-slider.vue-slider-horizontal .vue-slider-piecewise-label {
+  position: absolute;
+  display: inline-block;
+  top: 100%;
+  left: 50%;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #333;
+  transform: translate(-50%,8px);
+  visibility: visible;
+}
+
+.vue-slider .vue-slider-dot {
+  z-index: 3 !important;
+}
+
+

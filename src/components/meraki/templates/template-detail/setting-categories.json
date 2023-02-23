@@ -1,0 +1,115 @@
+[
+  {
+    "key": "network",
+    "sections": [
+      {
+        "key": "general",
+        "settings": ["types", "tags", "timezone", "traffic-analysis", "syslog-servers", "snmp", "net-flow"]
+      },
+      {
+        "key": "alerts",
+        "settings": ["alert-settings", "http-servers"]
+      },
+      {
+        "key": "group_policies",
+        "settings": ["group-policies"]
+      }
+    ]
+  },
+  {
+    "key": "security_sdwan",
+    "sections": [
+      {
+        "key": "addressing_vlans",
+        "settings": ["vlans", "static-routes"]
+      },
+      {
+        "key": "wireless_settings",
+        "settings": []
+      },
+      {
+        "key": "dhcp",
+        "settings": []
+      },
+      {
+        "key": "firewall",
+        "settings": ["mx-l3-firewall-rules", "mx-cellular-firewall-rules", "firewalled-services",
+          "mx-l7-firewall-rules", "mx-port-forwarding-rules", "mx-1-to-1-nat-rules", "mx-1-to-many-nat-rules"]
+      },
+      {
+        "key": "site_to_site_vpn",
+        "settings": ["site-to-site-vpn"]
+      },
+      {
+        "key": "client_vpn",
+        "settings": []
+      },
+      {
+        "key": "active_directory",
+        "settings": []
+      },
+      {
+        "key": "sdwan_traffic_shaping",
+        "settings": ["uplink-configuration", "traffic-shaping"]
+      },
+      {
+        "key": "access_control",
+        "settings": []
+      },
+      {
+        "key": "splash_page",
+        "settings": []
+      },
+      {
+        "key": "wireless_concentrator",
+        "settings": []
+      },
+      {
+        "key": "content_filtering_threat_protection",
+        "settings": ["content-filtering", "malware-protection", "intrusion-detection-protection"]
+      }
+    ]
+  },
+  {
+    "key": "switch",
+    "sections": [
+      {
+        "key": "acl",
+        "settings": ["switch-acl-rules"]
+      },
+      {
+        "key": "access_policies",
+        "settings": []
+      },
+      {
+        "key": "port_schedules",
+        "settings": ["switch-port-schedules"]
+      },
+      {
+        "key": "switch_settings",
+        "settings": ["switch-settings", "switch-qos-rules"]
+      },
+      {
+        "key": "switch_profiles",
+        "settings": ["switch-profiles"]
+      }
+    ]
+  },
+  {
+    "key": "wireless",
+    "sections": [
+      {
+        "key": "ssids",
+        "settings": ["ssids"]
+      },
+      {
+        "key": "ssid_availability",
+        "settings": []
+      },
+      {
+        "key": "radio_settings",
+        "settings": ["wireless-rf-profiles"]
+      }
+    ]
+  }
+]

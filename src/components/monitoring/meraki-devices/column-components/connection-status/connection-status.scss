@@ -1,0 +1,43 @@
+@import "../../../../../styles/v2/colors";
+
+.connection-status-cell {
+  text-align: center;
+
+  .v-icon {
+    color: $gray-light !important;
+    font-size: 12px;
+  }
+
+  &--online {
+    .v-icon {
+      color: $green-dark !important;
+    }
+  }
+
+  &--offline {
+    .v-icon {
+      color: $danger !important;
+    }
+  }
+}
+
+table.v-table tbody tr:hover {
+
+  .connection-status-cell {
+    .v-icon {
+      color: $gray-light !important;
+    }
+
+    &--online {
+      .v-icon {
+        color: $green-dark !important;
+      }
+    }
+
+    &--offline {
+      .v-icon {
+        color: $danger !important;
+      }
+    }
+  }
+}

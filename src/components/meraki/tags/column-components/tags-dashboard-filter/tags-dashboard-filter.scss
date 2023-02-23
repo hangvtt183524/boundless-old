@@ -1,0 +1,39 @@
+@import "../../../../../styles/v2/colors";
+
+.filters-container {
+  display: flex;
+  float: left;
+}
+
+.network-filter {
+  width: 138px;
+  float: left;
+  height: 75px;
+  cursor: pointer;
+  & > * {
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 15px;
+    color: $text-medium;
+  }
+}
+
+.device-filter {
+  width: 126px;
+  float: left;
+  height: 75px;
+  padding: 12px 0;
+}
+
+.switch-ports-filter {
+  width: 142px;
+  float: left;
+  height: 75px;
+  cursor: pointer;
+  & > * {
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 15px;
+    color: $text-medium;
+  }
+}

@@ -1,0 +1,12 @@
+.date-picker {
+  height: 42px;
+
+  .v-picker {
+    display: table;
+    z-index: 99999999;
+  }
+
+  &--small {
+    height: 32px;
+  }
+}

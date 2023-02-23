@@ -1,0 +1,163 @@
+// Tables
+//----------------------------------
+
+.application .theme--light.table, .theme--light .v-table{
+  background-color: transparent;
+  border-collapse: separate;
+  border-spacing: 0 6px;
+
+  td { border: solid 1px transparent; background-color: white; }
+  th { border: solid 1px transparent; background-color: #f8fafc; }
+  tr td:first-child, tr th:first-child {
+    border-top-left-radius: 6px; border-bottom-left-radius: 6px;
+    .v-input--checkbox {
+      .v-input--selection-controls__input {
+        margin-right: 0px;
+      }
+    }
+  }
+  tr td:last-child, tr th:last-child { border-top-right-radius: 6px; border-bottom-right-radius: 6px; }
+
+  .v-datatable__progress{
+    display: none;
+  }
+  .v-datatable__progress th{
+    background: none;
+  }
+  .v-icon {
+    color: #9ba9c4;
+  }
+}
+
+.application .theme--light.v-table thead tr:first-child,
+.theme--light .table thead tr:first-child {
+  background-color: transparent;
+}
+
+.application .theme--light.v-table thead th,
+.theme--light .v-table thead th {
+  color: #9ba9c4;
+  font-size: 14px;
+}
+
+.application .theme--light.v-datatable thead th.column.sortable.active,
+.application .theme--light.v-datatable thead th.column.sortable.active i,
+.application .theme--light.v-datatable thead th.column.sortable:hover,
+.theme--light .v-datatable thead th.column.sortable.active,
+.theme--light .v-datatable thead th.column.sortable.active i,
+.theme--light .v-datatable thead th.column.sortable:hover {
+  color: darken(#9ba9c4, 20%);
+}
+table.v-table thead tr {
+  height: 40px;
+}
+
+table.v-table tbody tr {
+  margin-top: 6px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+
+  td:first-child {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      left: -8px;
+      width: 7px;
+      height: calc(100% - 20px);
+      top: 10px;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-radius: 6px;
+      background: #aa85d9;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &:hover {
+    background-color: #ecf8ff !important;
+    color: $primary;
+
+    td {
+      color: $primary;
+    }
+
+    td::before {
+      opacity: 1;
+    }
+
+    .v-icon {
+      color: $primary !important;
+    }
+
+    .btn--active .btn__content:before,
+    .btn:focus .btn__content:before,
+    .btn:hover .btn__content:before {
+      background-color:  darken(#ecf8ff, 60%) !important
+    }
+  }
+}
+
+table.v-table tbody td {
+  font-size: 15px;
+  height: 60px;
+  color: #00082a;
+  .v-input--selection-controls {
+    .v-input__control {
+      .v-input__slot {
+        margin-bottom: 0px;
+      }
+      .v-messages {
+        display: none;
+      }
+    }
+  }
+}
+
+.v-datatable__actions {
+  display: none !important;
+  border-radius: 10px;
+  color: #9ba9c4;
+}
+
+.default-pagination .v-datatable__actions {
+  display: flex !important;
+}
+
+.application .theme--light.v-datatable .v-datatable__actions, .theme--light .v-datatable .v-datatable__actions {
+  border-top: 0;
+}
+
+.v-datatable__actions__select .v-select {
+  margin: 0 0 0 34px !important;
+  height: auto !important;
+  padding: 0px !important;
+}
+
+.v-datatable__actions__range-controls {
+  min-height: 42px;
+
+  .v-btn {
+    margin: 0;
+  }
+
+}
+
+.v-datatable__actions .v-btn:last-of-type {
+  margin-right: 10px;
+}
+
+.v-table__overflow {
+  overflow-x: visible;
+  overflow-y: visible;
+
+  @media only screen and (max-width: 768px) {
+   overflow-x: auto;
+   overflow-y: hidden;
+  }
+}
+
+.list-table-row.clickable {
+  cursor: pointer;
+}

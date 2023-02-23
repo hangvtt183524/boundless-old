@@ -1,0 +1,33 @@
+@import "../../../../../styles/v2/colors";
+
+.resources-list__header {
+  line-height: 72px;
+  padding: 0 27px;
+  position: relative;
+  border-bottom: 3px solid $gray-reserve;
+  z-index: 2;
+
+  &__search-options {
+    .base-check-box {
+      top: 2px;
+      position: relative;
+    }
+  }
+
+  &__actions {
+    text-align: right;
+    float: right;
+
+    .add-tags-link {
+      width: 100px;
+      float: left;
+      height: 75px;
+    }
+
+    .remove-tags-link {
+      width: 120px;
+      float: left;
+      height: 75px;
+    }
+  }
+}

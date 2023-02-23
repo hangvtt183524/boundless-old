@@ -1,0 +1,13 @@
+export const permissionEntities = (state) => state.permissionEntities
+export const applications = (state) => state.applications
+export const applicationsCount = (state) => state.applicationsCount
+export const vendorRoles = (state) => state.vendorRoles
+export const vendorRolesCount = (state) => state.vendorRolesCount
+export const userVendorRoles = (state) => state.userVendorRoles
+export const userVendorRolesCount = (state) => state.userVendorRolesCount
+export const samlUsers = (state) => state.samlUsers
+export const samlUsersCount = (state) => state.samlUsersCount
+export const merakiUsers = (state) => state.merakiUsers
+export const merakiUsersCount = (state) => state.merakiUsersCount
+export const merakiOrganizationUsers = (state) => state.merakiOrganizationUsers
+export const merakiOrganizationUsersCount = (state) => state.merakiOrganizationUsersCount

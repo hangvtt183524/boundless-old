@@ -1,0 +1,92 @@
+@import "../../../styles/v2/colors";
+
+.base-flat-select {
+  background-color: $gray-xlight;
+  position: relative;
+
+  &__scroll-container {
+    overflow: hidden;
+    margin: 0 40px;
+  }
+
+  &__options-container {
+    height: 40px;
+    white-space: nowrap;
+
+    &__option {
+      cursor: pointer;
+      display: inline-block;
+      box-sizing: border-box;
+      background-color: $gray-xlight;
+      height: 40px;
+      padding: 10px 0;
+
+      &__text-container {
+        line-height: 20px;
+        padding: 0 20px;
+
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        color: $text-medium;
+      }
+
+
+      &:not(:last-of-type) {
+        .base-flat-select__options-container__option__text-container {
+          border-right: 1px solid $white;
+        }
+      }
+
+      &--selected {
+        border: 2px solid $blue-medium;
+        background-color: $white;
+        font-weight: 600;
+        color: $blue-medium;
+
+        .base-flat-select__options-container__option__text-container {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &__right-scroll {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: $white;
+    user-select: none;
+
+    &__icon {
+      line-height: 30px;
+      color: $blue-medium;
+    }
+  }
+
+  &__left-scroll {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: $white;
+    user-select: none;
+
+    &__icon {
+      line-height: 30px;
+      color: $blue-medium;
+    }
+  }
+}

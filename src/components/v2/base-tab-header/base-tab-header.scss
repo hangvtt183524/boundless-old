@@ -1,0 +1,71 @@
+@import "../../../styles/v2/colors";
+
+.tab-header {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: $gray-dark;
+
+  height: 60px;
+  line-height: 60px;
+  min-width: 200px;
+  cursor: pointer;
+
+  background: $white;
+  border-radius: 4px;
+  outline: 0;
+  box-sizing: border-box;
+  border: 0 solid;
+
+  &:disabled {
+    border: 0;
+    cursor: not-allowed;
+    color: $gray-light;
+  }
+
+  &--active {
+    border-width: 2px;
+    color: $text-medium;
+  }
+
+  &--green {
+    border-color: $green-medium;
+
+    &:not(:disabled):hover {
+      text-decoration-line: underline;
+      border-color: $green-light;
+    }
+  }
+
+  &--blue {
+    border-color: $blue-dark;
+
+    &:not(:disabled):hover {
+      text-decoration-line: underline;
+      border-color: $blue-medium;
+    }
+  }
+
+  &--underlined {
+    color: $text-medium;
+    font-weight: normal;
+
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.tab-header--underlined.tab-header--blue.tab-header--active {
+  color: $blue-dark;
+}
+
+.tab-header--underlined.tab-header--green.tab-header--active {
+  color: $green-medium;
+}
